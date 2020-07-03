@@ -1,0 +1,737 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: 'Jost', sans-serif;
+    max-width: 85em;
+    margin: 0 auto;
+}
+
+/*--Header--*/
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 0;
+    height: 4em;
+    background-color: white;
+}
+
+/*Logo*/
+
+.contenedor article .logo {
+    height: 5em;
+    width: 8em;
+}
+.contenedor article .logo img {
+    width: 40%;
+    margin-left: 2.5em;
+    margin-bottom:-0.5em;
+}
+.contenedor article .logo p {
+    color:black;
+    text-align: center;
+}
+.contenedor article .logo img:hover {
+    cursor: pointer;
+    padding: 0;    
+}
+
+/*Nav*/
+
+.contenedor article nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1.2em 0.5em;
+    font-size: 1.3em;
+}
+.contenedor article nav ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.contenedor article nav ul li a:hover {
+    color: rgb(173, 28, 28);
+}
+
+.contenedor article nav ul li a::after {
+    content :'';
+    width: 0%;
+    height: 1px;
+    background-color:rgb(173, 28, 28);
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+  }
+.contenedor article nav ul li a:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+/*Buscador*/
+
+.contenedor article .buscador {
+    width: 20em;
+    margin: 1.1em 0;
+}
+.contenedor article .buscador input:focus{
+    outline: none ;
+    outline-width: 0;
+    box-shadow: none;
+}
+.contenedor article .buscador input {
+    height: 2.05em;
+    font-size: 1.2em;
+    width: 88%;
+    float: left;
+    padding-left: 0.5em;
+}
+
+/*Menu Responsive*/
+
+.menu_bar {
+    display: none;
+}
+
+
+/*----Main----*/
+
+/*Slider*/
+
+.slider {
+    margin-top: 1em;
+}
+.page_container {
+    margin: 50px auto;
+    max-width: 900px;
+}
+.immersive_slider .is-slide .content a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+.immersive_slider .is-slide .content a:hover {
+    color: rgb(155, 64, 64);
+  }
+  
+  .immersive_slider .is-slide .content p{
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1em;
+  }
+
+  .immersive_slider {
+    background: rgba(235, 230, 230, 0.931);
+    max-width: 100%;
+    height: 480px;
+    opacity: .9;
+    position: relative;
+    overflow: hidden;
+  }
+  .immersive_slider .is-slide  {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 50px 70px;
+    position: absolute;
+  }
+  .immersive_slider .is-slide .image  {
+    float: none;
+    width: 80%;
+    padding-top: 3em;
+    padding-left: 2em;
+  }
+  .is-bg-overflow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .is-overflow, .is-bg-overflow {
+    height: 100%;
+  }
+  
+  .ease {
+    -webkit-transition: 1000ms ease all;
+    -moz-transition: 1000ms ease all;
+    -o-transition: 1000ms ease all;
+    transition: 1000ms ease all;
+  }
+  
+  .bounce {
+    -webkit-transition: 1000ms cubic-bezier(0.175, 0.885, 0.420, 1.310) all;
+    -moz-transition: 1000ms cubic-bezier(0.175, 0.885, 0.420, 1.310) all;
+    -o-transition: 1000ms cubic-bezier(0.175, 0.885, 0.420, 1.310) all;
+    transition: 1000ms cubic-bezier(0.175, 0.885, 0.420, 1.310) all;
+  }
+  
+  .no-animation {
+    -webkit-transition: none!important;
+    -moz-transition: none!important;
+    -o-transition: none!important;
+    transition: none !important;
+  }
+  
+  .immersive_slider .is-slide .image img{
+    max-width: 50em;
+    width: 100%;
+  }
+  
+  .immersive_slider .is-slide .content {
+    float: none;
+    width: 30%;
+    color: black;
+    text-align: left;
+  }
+  
+  
+  .is-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .is-container .is-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .is-container .is-background img{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: relative;
+  }
+  
+  .is-pagination {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .is-pagination li {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+  .is-pagination li a{
+    padding: 1em;
+    width: 4px;
+    height: 4px;
+    display: block;
+    
+  }
+  .is-pagination li a:before{
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: none;
+    border: 1px solid rgb(155, 64, 64);
+    border-radius: 10px;
+  }
+  
+  .is-pagination li a.active:before{
+    width: 1em;
+    height: 1em;
+    background: none;
+    background:rgb(155, 64, 64);
+    border: 1px solid rgb(155, 64, 64);
+  }
+  
+  .is-next,  .is-prev {
+    padding:0.2em;
+    font-size: 50px;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -36px;
+    width: 45px;
+    height: 50px;
+    color: rgb(155, 64, 64);
+    display: inline-block;
+    line-height: 40%;
+    text-decoration: none;
+    background: rgba(189, 179, 179, 0.35);
+  }
+  
+  .is-next {
+    right: 5px;
+  }
+  
+  .is-prev {
+    left: 5px;
+  }
+
+/*Enlaces a Otras Paginas*/
+
+main .paginas {
+    height: 25em;
+}
+main .paginas h2{
+    text-align: center;
+    margin: 2em 0;
+    font-size: 2em;
+}
+main .paginas .enlaces{
+    display: flex;
+    justify-content: space-around;  
+}
+main .paginas .enlaces article {
+   text-align: center;
+}
+main .paginas .enlaces article:hover {
+    cursor: pointer;
+}
+main .paginas .enlaces .imagen {
+    background-color: rgb(191, 188, 194);
+    border-radius: 50%;
+    height: 12.5em;
+    width: 12.5em;
+}
+main .paginas .enlaces .imagen img {
+    width: 8.4em;
+    margin: 2em; 
+}
+main .paginas .enlaces .imagen img:hover {
+    transform:none;
+} 
+main .paginas .enlaces article h3{
+    margin: 0.5em 0;
+    font-size: 1.5em;
+}
+main .paginas .enlaces article h3 a{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+main .paginas .enlaces article h3 a:hover {
+    color: rgb(158, 42, 42);
+}
+
+/*Informacion Sintomas-Telefono*/
+
+main .informacion {
+    height: 18em;
+    display: flex;
+    justify-content: space-around;
+    background-color:  rgba(214, 214, 214, 0.568);
+}
+main .informacion article {
+    width: 50%;
+    text-align: center;
+}
+main .informacion .texto-sintomas {
+    font-size: 2.2em;
+    margin: 2.2em 1em;
+    text-align: center;
+ 
+}
+main .informacion .texto-sintomas .llama {
+    font-size: 2em ;
+}
+main .informacion .numero-telefono {
+    font-size: 9em;
+    margin: 0.3em 0;
+}
+main .informacion .numero-telefono img {
+    width: 0.6em;
+}
+main .informacion .numero-telefono img:hover {
+    cursor: pointer;
+}
+
+/*----Footer----*/
+
+footer {
+    display: flex;
+    height: 10em;
+    justify-content: space-around;
+    color: black;
+    background-color: beige;
+    overflow: hidden;
+}
+footer article {
+    width: 33%;
+}
+footer article h4 {
+    margin: 1em 0;
+}
+footer article p, footer article h4 {
+    text-align: center;
+}
+footer .menu-footer p a{
+    text-decoration: none;
+    color: black;
+}
+footer .menu-footer p a:hover {
+    color: rgb(173, 35, 35);
+}
+/*Redes*/
+footer .redes .iconos-footer {
+    display: flex;
+    justify-content: center;
+}
+footer .redes .iconos-footer p a i {
+    font-size: 2.5em;
+    margin: 0.3em;
+    color: black;  
+}
+footer .redes .iconos-footer p a i:hover {
+    cursor: pointer;
+    color: rgb(173, 28, 28);
+}
+
+
+
+
+
+
+/*MEDIA QUERIES: iPad, Tablet...*/
+
+@media (min-width:700px) and (max-width:1024px){
+    body {
+        max-width: none;
+    }
+    main {
+        margin-top: 5em;
+    }
+    
+    /*----Header----*/ 
+    .contenedor {
+        display:block;
+        position: fixed;
+        z-index: 9999;
+    }
+    .contenedor article .logo,
+    .contenedor article .buscador input {
+        display: none;
+    }
+  
+    .contenedor article nav{
+        width: 60%;
+        height: 100em;
+        position: absolute; /*Ver*/
+        background-color:rgba(151, 202, 206, 0.904);   
+        margin-left: -100% ;
+    } 
+    
+    .contenedor article nav ul li{
+        display: block;
+        margin: 2em 1em;
+        border-bottom: 1px solid rgba(122, 121, 121, 0.931);
+    }
+    .contenedor article nav ul li a{
+        font-size: 1em;
+    }
+
+    /*Menu Responsive*/
+    
+    .menu_bar {
+        display: block;
+        width: 100%; 
+        height: 4em;   
+    }
+  
+    .menu_bar span a img {
+        width: 1.5em;
+        margin: -0.3em 0.5em;
+    }
+
+    .menu_bar .bt-menu {
+        display: inline-block;
+        padding: 0.6em;
+        height: 100%;
+        background-color:rgba(151, 202, 206, 0.87);          
+        color: black;
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.5em;
+        
+    }
+    .menu_bar  .bt-menu i {
+        float: right;
+        margin-left: 0.5em;
+        font-size: 1.5em;
+    }
+    .menu_bar  .bt-menu i:hover {
+        color: rgb(173, 28, 28);
+    }
+
+    /*----Main----*/
+
+    /*Slider*/ 
+    .slider {
+        height: 20em;
+    }
+    .page_container {
+        margin: 10px auto;
+        max-width: 700px;
+     }
+ 
+    .immersive_slider .is-slide .content p{
+        padding: 0.2em 0;
+        font-size: 0.9em;
+    }
+    .immersive_slider {
+        height: 300px;
+   
+    }
+    .immersive_slider .is-slide  {
+        padding: 20px 50px;
+    }
+    .immersive_slider .is-slide .image  {
+        float: none;
+        width: 60%;
+        padding-top: 3em;
+        padding-left: 2em;
+    }
+      
+    .immersive_slider .is-slide .image img{
+        max-width: 40em;
+        width: 100%;
+    }
+      
+    .immersive_slider .is-slide .content {
+        width: 40%;
+    
+    }
+    .is-pagination li a:before{
+        width: 0.8em;
+        height: 0.8em;
+      }
+      
+      .is-pagination li a.active:before{
+        width: 0.8em;
+        height: 0.8em;
+      }
+      
+      .is-next,  .is-prev {
+        padding:0.2em;
+        font-size: 40px;
+        width: 36px;
+        height: 40px;
+      }
+    /*Informacion Sintomas - Telefono*/
+
+    main .informacion {
+        height: 14em;
+    }
+    main .informacion article {
+        width: 100%;
+    }
+    main .informacion .texto-sintomas {
+        font-size: 1.5em;
+        margin:3em 0 0;
+    }
+    main .informacion .texto-sintomas .llama {
+        font-size: 1.8em;
+    }
+    main .informacion .numero-telefono {
+        font-size: 6em;
+        margin: 0.5em 0 0;
+    }
+}
+/*MEDIA QUERIES: Blackberry, MotoG4...*/
+
+@media (min-width:360px) and (max-width:700px){
+   
+    body {
+        max-width: none;
+    }
+    main {
+        margin-top: 5em;
+    }
+    
+    /*----Header----*/ 
+
+    .contenedor {
+        display:block;
+        position: fixed;
+        z-index: 9999;
+    }
+    .contenedor article .logo,
+    .contenedor article .buscador input {
+        display: none;
+    }
+    .contenedor article nav{
+        width: 60%;
+        height: 100%;
+        position: fixed;
+        background-color:rgba(151, 204, 207, 0.938);         
+        margin-left: -100% ;       
+    } 
+    .contenedor article nav ul li{
+        display: block;
+        margin: 2em 1em;
+        border-bottom: 1px solid rgba(122, 121, 121, 0.931);
+    }
+    .contenedor article nav ul li a{
+        font-size: 1em;
+    }
+
+    /*Menu Responsive*/ 
+
+    .menu_bar {
+        display: block;
+        width: 100%; 
+        height: 4em; 
+    }
+    .menu_bar span a img {
+        width: 1.5em;
+        margin: -0.3em 0.5em;
+    }
+    .menu_bar .bt-menu {
+        display: inline-block;
+        padding: 0.7em 0;
+        height: 100%;
+        background-color:rgba(151, 204, 207, 0.904);        
+        color: black;
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+    
+    .menu_bar  .bt-menu i {
+        float: right;
+        padding-right: 0.5em;
+        font-size: 1.5em;
+    }
+    .menu_bar  .bt-menu i:hover {
+        color: rgb(173, 28, 28);
+    }
+
+    /*----Main----*/
+
+    /*Slider*/ 
+    .slider {
+        margin-top: 1em;
+    }
+    .page_container {
+        margin: 10px auto;
+        max-width: 450px;
+
+    }
+    .immersive_slider .is-slide .content a {
+        font-size: 2em;
+      }
+  
+    .immersive_slider .is-slide .content p{
+        padding: 0.5em 0 0;
+        font-size: 0.9em;
+      }
+      .immersive_slider .slide {
+          display: flex;
+          flex-direction: column;
+      }
+      .immersive_slider {
+        height: 350px;
+      }
+      .immersive_slider .is-slide  {
+        padding: 10px 60px;
+      }
+      .immersive_slider .is-slide .image  {
+        width: 90%;
+        padding-top: 0.5em;
+      }
+      .immersive_slider .is-slide .content {
+        width: 100%;
+      }
+      .is-pagination li a:before{
+        width: 0.5em;
+        height: 0.5em;
+      }
+      .is-pagination li a.active:before{
+        width: 0.5em;
+        height: 0.5em;
+      }
+      
+      .is-next,  .is-prev {
+        font-size: 40px;
+        margin-bottom: -26px;
+        width: 35px;
+        height: 40px;
+      }
+    
+    /*Enlaces a Otras Paginas*/
+
+    main .paginas {
+        height: 50em;
+    }
+    main .paginas h2{
+        font-size: 1.2em;
+    }
+    main .paginas .enlaces{
+        flex-direction: column;
+        align-items: center;  
+    }
+    main .paginas .enlaces article h3 a{
+        font-size: 0.8em;
+    }
+    main .paginas .enlaces .imagen {
+        height: 11em;
+        width: 11em;
+    }
+    main .paginas .enlaces .imagen img {
+        width: 7em;
+        margin: 2em;
+    }
+  
+
+    /*Informacion Sintomas - Telefono*/
+
+    main .informacion {
+        height: 14em;
+        flex-direction: column;  
+    }
+    main .informacion article {
+        width: 100%;
+    }
+    main .informacion .texto-sintomas {
+        font-size: 1.5em;
+        margin: 0.5em 0 0;
+    }
+    main .informacion .texto-sintomas .llama {
+        font-size: 1.4em;
+    }
+    main .informacion .numero-telefono {
+        font-size: 4.5em;
+        margin: 0;
+    }
+
+    /*----Footer----*/
+
+    footer {
+        height: 25em;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-evenly;
+   
+    }
+    footer article {
+        width: 100%;
+    }
+    footer article h4 {
+        margin: 0.2em 0;
+    }
+
+    /*Redes*/
+    footer .redes .iconos-footer p a i {
+        font-size: 2em;
+        margin: 0.3em;
+   
+    } 
+}
+

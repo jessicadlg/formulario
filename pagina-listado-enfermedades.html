@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacion Salud - Pagina de Enfermedades</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="Css/styles-principal.css">
+    <link rel="stylesheet" href="Css/styles-listado-enfermedades.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <!--Logo-->
+            <article>
+                <div class="logo">
+                    <img src="Iconos/logo.png" alt="">
+                    <p>Fundacion Salud</p>
+                </div>
+            </article>
+            <article>
+                <!--Menu Responsive-->
+                <div class="menu_bar">
+                    <span> <a href="#" class="bt-menu"> <img src="Iconos/logo.png" alt=""><i
+                                class="fas fa-bars"></i>Fundacion Salud</a></span>
+                </div>
+                <!--Menu-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pagina-listado-enfermedades.html">Enfermedades</a></li>
+                        <li><a href="pagina-mapa.html">Hospitales</a> </li>
+                        <li><a href="pagina-vacunas.html">Vacunación</a></li>
+                        <li><a href="pagina-contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <!--Buscador-->
+            <article>
+                <div class="buscador">
+                    <input type="search" class="input-buscador" name="" id="" placeholder="Buscar..."
+                        list="lista-busqueda">
+                    <datalist id="lista-busqueda">
+                        <option value="  COVID19"></option>
+                        <option value="  Dengue"></option>
+                        <option value="  Fiebre Amarilla"></option>
+                        <option value="  Gripe A"></option>
+                    </datalist>
+                </div>
+
+            </article>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- listado de enfermedades -->
+            <h1>ENFERMEDADES</h1>
+            <article>
+                <input type="search" class="buscar" placeholder="Filtrar por enfermedades..." list="listaBusqueda">
+                <datalist id="listaBusqueda">
+                    <option value="COVID-19"></option>
+                    <option value="Dengue"></option>
+                    <option value="Fiebre Amarilla"></option>
+                    <option value="Gripe A"></option>
+                </datalist>
+            </article>
+        </section>
+        <section class="contenedorEnfermedades">
+            <article class="cajaEnfermedades-Imagen">
+                <img src="Img/Enfermedades/1covid.jpg" alt="">
+            </article>
+            <article class="cajaEnfermedades-Descripcion">
+                <h2>COVID-19</h2>
+                <p>
+                    Es la enfermedad infecciosa causada por el coronavirus que se ha descubierto más recientemente.
+                    Tanto el nuevo virus como la enfermedad eran desconocidos antes de que estallara el brote en Wuhan
+                    (China) en diciembre de 2019.
+                <p>
+                <p><a href="pagina-enfermedad.html" class="btn">Ver detalle</a></p>
+            </article>
+        </section>
+        <section class="contenedorEnfermedades">
+            <article class="cajaEnfermedades-Imagen">
+                <img src="Img/Enfermedades/dengue-imagen.jpg" alt="100">
+            </article>
+            <article class="cajaEnfermedades-Descripcion">
+                <h2>Dengue</h2>
+                <p>
+                    Es una enfermedad viral transmitida por la picadura del mosquito Aedes aegypti. Cuando el mosquito
+                    se alimenta con sangre de una persona enferma de dengue y luego pica a otras personas les transmite
+                    esta enfermedad.
+                </p>
+                <p> <a href="#">Ver detalle</a></p>
+            </article>
+        </section>
+        <section class="contenedorEnfermedades">
+            <article class="cajaEnfermedades-Imagen">
+                <img src="Img/Enfermedades/IDT-girpe-porcina.png" alt="">
+            </article>
+            <article class="cajaEnfermedades-Descripcion">
+                <h2>Gripe A</h2>
+                <p>
+                    El virus H1N1 (gripe porcina) es una infección de la nariz, la garganta y los pulmones. Es causada
+                    por el virus de la influenza H1N1.
+                </p>
+                <p><a href="#" class="btn">Ver detalle</a></p>
+            </article>
+        </section>
+        <section class="contenedorEnfermedades">
+            <article class="cajaEnfermedades-Imagen">
+                <img class="imagenEnf" src="Img/Enfermedades/5FIEBREa.jpg" alt="100">
+            </article>
+            <article class="cajaEnfermedades-Descripcion">
+                <h2>Fiebre Amarilla</h2>
+                <p>Es una enfermedad viral que se transmite a través de la picadura de ciertas especies de mosquitos.
+                    Puede ser grave y provocar la muerte. No tiene tratamiento pero puede prevenirse.
+                <p>
+                <p> <a href="#" class="btn">Ver detalle</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!--Datos Grupo-->
+        <article class="datos-footer">
+            <h4>Datos del Grupo </h4>
+            <p>Bellone, Agustina Belén</p>
+            <p>Delgado, Jessica Joana </p>
+        </article>
+        <!--Otras Paginas-->
+        <article class="menu-footer">
+            <h4>Otras páginas </h4>
+            <p><a href="pagina-listado-enfermedades.html">Enfermedades</a></p>
+            <p><a href="pagina-vacunas.html">Vacunas</a> </p>
+            <p><a href="pagina-mapa.html">Hospitales</a></p>
+            <p><a href="pagina-contacto.html">Contacto</a></p>
+        </article>
+        <!--Redes-->
+        <article class="redes">
+            <h4>Redes Sociales </h4>
+            <div class="iconos-footer">
+                <p><a href="http://www.facebook.com" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+                </p>
+                <p><a href="http://www.instagram.com" target="_blank"><i id="instagram"
+                            class="fab fa-instagram"></i></a></p>
+                <p><a href="https://www.twitter.com" target="_blank"><i id="twitter" class="fab fa-twitter"></i></a></p>
+            </div>
+        </article>
+    </footer>
+</body>
+<script src="Js/jquery-3.5.1.min.js"></script>
+<script src="Js/menu.js"></script>
+
+</html>

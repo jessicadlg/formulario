@@ -1,0 +1,223 @@
+/* Titulo */
+main h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 1.5em;
+}
+/* Formulario-contacto */
+main .contacto{
+    height: 40em;
+}
+main .contacto  .formulario {
+    height: 35em;
+    box-shadow: 0px 0px 15px -5px black;
+    padding: 1em;
+    width: 50%;
+    margin: 0 auto;
+}
+main .contacto form{
+    width: 100%;
+    margin: auto;
+}
+main .contacto form textarea{
+    resize: none;
+    height: 15em; 
+}
+main .contacto form input{
+    display: block;
+}
+main .contacto form input, 
+main .contacto form textarea{
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    font-family:'Jost', sans-serif;
+    border: 2px solid #f0f0f0;
+}
+main .contacto form input:focus, 
+main .contacto form textarea:focus{
+    outline: none ; 
+    border: 1px solid rgb(153, 54, 54);
+}
+main .contacto form button{
+    background-color:rgb(168, 79, 79);
+    height: 2.5em;
+    padding: 0.5em;
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    width: 5em;
+    margin: 0 auto;
+    cursor: pointer; 
+}
+main .contacto form button:hover{
+    background-color:rgb(153, 54, 54);
+}
+/* Datos */
+main .contenedor-datos {
+    display: flex;
+    margin: 2em 0 0;
+}
+main .contenedor-datos article {
+    width: 50%;
+}
+main .contenedor-datos article h2{
+     text-align: center;
+     margin: 2em;
+     font-size: 1.5em;
+
+}
+main .contenedor-datos p{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0.4em;
+    box-sizing: border-box;
+}
+main .contenedor-datos p a {
+    text-decoration: none;
+    color: black;
+}
+main .contenedor-datos p a:hover{
+    color: rgb(153, 54, 54);
+}
+/* Mapa-ubicacion */
+main .contenedor-datos .mapa-ubicacion iframe{
+    width: 90%;
+    height: 16em;
+    margin: 1em;
+    
+}
+
+/*Para JavaScript: Editamos los iconos de error/success, el texto de error y la visibilidad de las clases */
+
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    float: right;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+    margin-right: 1em;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+
+.form-control small {
+	color: #e74c3c;
+    visibility: hidden;
+
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+.form-control.success small {
+    visibility: visible;
+    color: rgb(45, 194, 45);
+}
+
+/*Texto contador de caracteres*/
+main .contacto form label { 
+    font-size: 1em; 
+    color: grey;
+}
+
+
+/*MEDIA QUERIES: iPad*/
+@media (min-width:700px) and (max-width:1024px){
+    main h1 {
+        font-size: 1.9em;
+    }
+    main .contacto  .formulario {
+        width: 70%;
+    }
+  
+    main .contenedor-datos {
+        flex-direction: column;
+        width: 100%;
+    }
+    main .contenedor-datos article {
+        width: 80%;
+        margin: 0 auto;
+    }
+    main .contenedor-datos article h2{
+        margin: 1em;
+        font-size: 1.2em;
+    }
+    main .contenedor-datos p{
+       font-size: 1em;
+    }
+    main .contenedor-datos .mapa-ubicacion iframe{
+        height: 14em;
+        margin: 1.5em;
+    }
+}
+
+/*MEDIA QUERIES MOTOG4, BLACKBERRY...*/
+
+@media (min-width:360px) and (max-width:700px){
+
+main h1 {
+    font-size: 1.8em;
+    margin: 1em;
+}
+main .contacto  .formulario {
+    width: 90%;
+}
+
+main .contenedor-datos {
+    flex-direction: column;
+    width: 100%;
+}
+main .contenedor-datos article {
+    width: 100%;
+}
+main .contenedor-datos article h2{
+    margin: 1em;
+    font-size: 1.2em;
+}
+main .contenedor-datos p{
+   font-size: 1em;
+}
+main .contenedor-datos .mapa-ubicacion iframe{
+    height: 14em;
+    margin: 1.5em;
+} 
+main .contacto form textarea{
+    margin-bottom: 2em;
+}
+
+main .contacto form button{
+    height: 2em;
+    font-size: 1em;
+    width: 4em;
+}
+
+/*Para JavaScript: Editamos los iconos de error/success, el texto de error y la visibilidad de las clases */
+.form-control.success small,
+.form-control.error small {
+    font-size: 0.8em;
+}
+
+
+/*Texto contador de caracteres*/
+main .contacto form label { 
+    font-size: 0.8em; 
+}
+
+}

@@ -1,0 +1,279 @@
+/* Titulo */
+main {
+    text-align: center;
+}
+main h1 {
+    font-size: 2.2em;
+    margin: 1.5em 0 1em;
+}
+/* Mapas */
+main .mapas {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .mapas article {
+    width: 50%;
+}
+main .mapas article h2 {
+    text-align: center;
+    margin: 0 0 1em;
+}
+main .mapas article p {
+    font-size: 1em;
+    margin: 1em 0;
+}
+main .mapas article p a {
+    text-decoration: none;
+    color: black;
+}
+main .mapas article p a:hover {
+    cursor: pointer;
+    color: rgb(173, 35, 35);
+}
+main .mapas article iframe {
+    width: 90%;
+    height: 20em;
+    margin: 1em;
+}
+/*Hospitales con Terapia Intensiva*/
+main .hospitales-terapia-intensiva {
+    height: 35em;
+    margin: 1em 0;
+    width: 100%;
+    background-color: rgba(230, 230, 200, 0.075);
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+  
+}
+main .hospitales-terapia-intensiva h3 {
+    font-size: 2em;
+    padding-top: 2em;
+}
+main .hospitales-terapia-intensiva article{
+    width: 25%;
+    height: 12em;
+    margin: 4em auto;
+}
+main .hospitales-terapia-intensiva article h4 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+main .hospitales-terapia-intensiva article img {
+    width: 100%;
+    box-shadow: 0px 0px 15px -5px black;
+   
+}
+main .hospitales-terapia-intensiva article img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+/*Ventana PopUp*/
+
+main .hospitales-terapia-intensiva article .popup,
+main .hospitales-terapia-intensiva article .popup2,
+main .hospitales-terapia-intensiva article .popup3{
+    background-color:rgb(255, 255, 255);
+    border-radius: 1em;
+    width: 50%;
+    height: 25em;
+    position: absolute;
+    text-align: center;
+    z-index:2;
+    top:140%;
+    left: 25%;
+    right: 25%;
+    display: none; 
+    box-shadow: -1px -2px 13px 0px rgba(0,0,0,0.75);
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article  i {
+    color : rgb(184, 44, 44);
+    font-size: 2.5em;
+    float: right;
+    margin-top: -3px;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article i:hover {
+    cursor: pointer;
+}
+
+main .hospitales-terapia-intensiva .imagenes-hospitales article .texto-popup {
+    padding: 3em 1em;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article  p {
+    font-size: 1.5em;
+    margin: 1em 0;
+
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article p a{
+    color: black;
+    text-decoration: none;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article p a:hover {
+    color: rgb(173, 35, 35);
+    
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article  iframe {
+    border-radius: 10px;
+    width: 400px;
+}
+
+
+/*MEDIA QUERIES: Blackberry, MotoG4...*/
+
+@media (min-width:360px) and (max-width:700px){
+    main {
+        margin-top: 5em ;
+    }
+    main h1 {
+        font-size: 1.8em;
+    }
+    main .mapas {
+        flex-direction: column;
+    }
+    
+    main .mapas article {
+        width: 100%;
+        margin: 0 auto;
+    }
+    main .mapas article h2 {
+        margin: 1em 0;
+    }
+    main .mapas article p {
+        font-size: 1em;
+    }
+    main .mapas article iframe {
+        height: 15em;
+    }
+
+/*Hospitales con Terapia Intensiva*/
+
+main .hospitales-terapia-intensiva {
+    height: 72em;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales{
+    flex-direction: column;
+}
+main .hospitales-terapia-intensiva h3 {
+    font-size: 1.8em;
+}
+main .hospitales-terapia-intensiva article{
+    width: 23em;
+    height: 22em;
+    margin: 0 auto;
+}
+
+main .hospitales-terapia-intensiva article img:hover {
+    transform: none;
+}
+
+/*Ventana PopUp*/
+
+main .hospitales-terapia-intensiva article .popup{
+    width: 20em;
+    height: 10em;
+    top: 225%;
+    left: 15%;
+}
+main .hospitales-terapia-intensiva article .popup2{
+    width: 20em;
+    height: 10em;
+    top:285%;
+    left: 15%;
+}
+main .hospitales-terapia-intensiva article .popup3{
+    width: 20em;
+    height: 10em;
+    top:340%;
+    left: 15%;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article  i {
+    font-size: 1.5em;
+}
+
+main .hospitales-terapia-intensiva .imagenes-hospitales article .texto-popup {
+    padding: 1.8em;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article  p {
+    font-size: 1em;
+    margin: 0;
+}
+main .hospitales-terapia-intensiva .imagenes-hospitales article iframe {
+   display: none;
+}
+
+}
+/*MEDIA QUERIES: iPad*/
+@media (min-width:700px) and (max-width:1024px){
+    main {
+        margin-top: 5em ;
+    }
+    main .mapas {
+        flex-direction: column;
+    }
+    main .mapas article {
+        width: 90%;
+        margin: 1em auto;
+    }
+    /*Hospitales con Terapia Intensiva*/
+
+    main .hospitales-terapia-intensiva {
+        height: 80em;
+    }
+    main .hospitales-terapia-intensiva .imagenes-hospitales{
+        flex-direction: column;
+    }
+    main .hospitales-terapia-intensiva h3 {
+        font-size: 1.8em;
+    }
+    main .hospitales-terapia-intensiva article{
+        width: 25em;
+        height: 22em;
+        margin: 1em auto;
+    }
+    main .hospitales-terapia-intensiva article img:hover {
+        transform: none;
+    }
+
+    /*Ventana PopUp*/
+
+    main .hospitales-terapia-intensiva article .popup{
+        width: 30em;
+        height: 18em;
+        top:245%;
+        margin: 0 auto;
+    }
+    main .hospitales-terapia-intensiva article .popup2{
+        width: 30em;
+        height: 18em;
+        top:310%;
+        margin: 0 auto;
+      
+    }
+    main .hospitales-terapia-intensiva article .popup3{
+        width: 30em;
+        height: 18em;
+        top:375%;
+        margin: 0 auto;
+    }
+    main .hospitales-terapia-intensiva .imagenes-hospitales article  i {
+        font-size: 1.5em;
+    }
+
+    main .hospitales-terapia-intensiva .imagenes-hospitales article .texto-popup {
+        padding: 1.8em;
+    }
+    main .hospitales-terapia-intensiva .imagenes-hospitales article  p {
+        font-size: 1.1em;
+        margin: 0;
+    }
+    main .hospitales-terapia-intensiva .imagenes-hospitales article iframe {
+       width: 250px;
+       height: 130px;
+    }
+        
+}

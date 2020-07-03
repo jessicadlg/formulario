@@ -1,0 +1,425 @@
+
+
+main .enfermedad {
+    height: 30em;
+}
+main .enfermedad h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin: 1.5em;
+}
+/* Descripcion */
+main .enfermedad .descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+main .enfermedad .descripcion .imagen-enfermedad{
+    width: 45%;
+    padding-left: 2em ;
+}
+main .enfermedad .descripcion .descripcion-enfermedad {
+    width: 50%;
+  
+}
+main .enfermedad .descripcion .descripcion-enfermedad p {
+    text-align: center;
+    font-size: 1.3em;
+}
+main .enfermedad .descripcion .imagen-enfermedad img {
+    width: 90%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 15px -5px black;
+}
+/* Formulario */
+main .formulario {
+    height: 60em;
+}
+main .formulario h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 1em 0;
+}
+main .formulario .contenedor-formulario {
+    display: flex;
+    height: 55em;
+}
+main .formulario .contenedor-formulario .sintomas {
+    width: 50%;
+    padding:2em;
+}
+main .formulario .contenedor-formulario .sintomas p {
+    text-align: center;
+    font-size: 1.2em;
+}
+main .formulario .contenedor-formulario .sintomas .sintomas-imagenes h4{
+    font-size: 1.3em;
+    text-align: center;
+}
+main .formulario .contenedor-formulario .sintomas .sintomas-imagenes .contenedor-imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .formulario .contenedor-formulario .sintomas .sintomas-imagenes img {
+    width: 14em;
+    margin-bottom: 2em;
+   
+}
+main .formulario .contenedor-formulario .sintomas .sintomas-imagenes img:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+}
+
+main .formulario .contenedor-formulario form {
+    width: 50%;
+    text-align: center;
+    margin: 2em 2em 0;
+    height: 50em;
+    padding: 1em 0;
+    box-shadow: 0px 0px 15px -5px black;
+}
+main .formulario .contenedor-formulario form h5 {
+    font-size: 1.5em;
+    margin: 0.3em 0;
+}
+main .formulario .contenedor-formulario form p {
+    font-size: 1em;
+    margin: 1em;
+}
+main .formulario .contenedor-formulario form label select option{
+    width: 30%;
+   
+}
+main .formulario .contenedor-formulario form .indicar {
+    font-size: 1.3em;
+}
+main .formulario .contenedor-formulario form .rellenar {
+    width: 80%;
+    padding-left: 0.5em;
+}
+main .formulario .contenedor-formulario form input {
+    height: 2em;
+    font-family:'Jost', sans-serif;
+    margin: 0.5em 0;
+    border: 2px solid #f0f0f0;
+}
+
+main .formulario .contenedor-formulario form input:focus{
+    outline: none ; 
+    border:1px solid rgb(153, 54, 54);
+
+}
+main .formulario .contenedor-formulario form  label input[type="radio"] {
+   font-size: 0.4em;
+   margin: 0.5em;
+}
+main .formulario .contenedor-formulario form  .boton-visitado {
+    background-color: rgb(153, 54, 54);
+    width: 6em;
+    margin: auto;
+    text-align: left;
+}
+main .formulario .contenedor-formulario form  button {
+    background-color:rgb(173, 83, 83);
+    width: 6em;
+    height: 2.5em;
+    padding: 0.5em;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+}
+main .formulario .contenedor-formulario form  button:hover{
+    cursor: pointer;
+    background-color:rgb(153, 54, 54);
+}
+
+main .formulario .contenedor-formulario form  .boton-visitado p{
+    text-decoration: none;
+    color: white;
+}
+main .formulario .contenedor-formulario form .oculto {
+    display: none;
+}
+/* Consejos */
+main h3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0;
+}
+main .consejos-imagenes {
+    width: 100%;
+    height: 30em;
+    display: grid;
+    grid-template-columns: 10em 10em 10em 10em;
+    grid-column-gap: 4em;
+    margin-bottom: 10em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+main .consejos-imagenes img {
+    width: 13em;  
+    margin: 0 auto;
+}
+main .consejos-imagenes img:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+/* Hospital-cercano */
+main .hospital-cercano {
+    display: flex;
+    height: 30em;
+}
+main .hospital-cercano article {
+    width: 50%;
+    text-align: center;
+}
+main h4 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em 0;
+}
+main .hospital-cercano .hospital-informacion p {
+    font-size: 1em;
+    margin: 1em 0;
+}
+main .hospital-cercano .hospital-informacion p a{
+    color: black;
+    text-decoration: none;
+}
+main .hospital-cercano .hospital-informacion p a:hover {
+    color: rgb(153, 54, 54);
+}
+main .hospital-cercano .hospital-informacion img {
+    width: 25em;
+    margin: 1em 0;
+    border-radius: 2%;
+    box-shadow: 0px 0px 15px -5px black;
+}
+
+main .hospital-cercano .hospital-mapa .mapa {
+    height: 25em; 
+    margin: 3em 0;
+}
+main .hospital-cercano .hospital-mapa .mapa iframe {
+    width: 90%;
+    height: 90%;
+    border-radius: 2em;
+}
+
+
+
+/*Media Queries: MOTO G4*/
+
+@media (min-width:360px) and (max-width:700px){
+    
+    main .enfermedad h1 {
+        font-size: 1.8em;
+        margin: 1.5em;
+    }
+    main .formulario h2,
+    main .formulario .contenedor-formulario .sintomas .sintomas-imagenes h4,
+    main .consejos h3,
+    main h3,
+    main h4{
+        font-size: 1.3em;
+    }
+
+    main .enfermedad  {
+        margin: 1em 0;
+        height: 38em;
+        width: 100%;
+        margin: 0 auto;
+    }
+    main .enfermedad .descripcion {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main .enfermedad .descripcion .imagen-enfermedad{
+        width: 90%;
+        margin-top: 2em;
+       
+    }
+    main .enfermedad .descripcion .descripcion-enfermedad p,
+    main .formulario .contenedor-formulario .sintomas p {
+        font-size: 1em;
+        margin-bottom: 1em;   
+        padding: 0 2em;
+    }
+    main .enfermedad .descripcion .descripcion-enfermedad  {
+        width: 90%;
+    }
+    main .formulario {
+        height: 100em;
+    }
+    main .formulario h2 {
+        margin: 0;
+    }
+    main .formulario .contenedor-formulario {
+        flex-direction: column;
+        height: 100em;
+    
+    }
+
+    main .formulario .contenedor-formulario .sintomas {
+        width: 100%;
+    }
+  
+    main .formulario .contenedor-formulario form label p {
+        font-size: 0.9em;
+    }
+
+    main .formulario .contenedor-formulario .sintomas .sintomas-imagenes .contenedor-imagenes {
+        flex-direction: column;
+        width: 100%;
+    }
+    main .formulario .contenedor-formulario .sintomas .sintomas-imagenes img {
+        width: 12em;       
+    }
+  
+    main .formulario .contenedor-formulario form {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    main .formulario .contenedor-formulario form  button {
+        width: 4em;
+        padding: 0.2em;
+        font-size: 1em;
+        margin-top: 3em;
+
+    }
+    main .consejos {
+        margin-top: 6em;
+        height: 50em;
+    }
+    main .consejos-imagenes img {
+        width: 10em;  
+        margin: 0 auto;
+    }
+    main .consejos-imagenes {
+        height: 45em;
+        grid-column-gap:1em;
+        grid-template-columns: 10em 10em;
+    }
+    main .hospital-cercano {
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    main .hospital-cercano article {
+        margin: 0 auto;
+        width: 100%;
+    }
+    main .hospital-cercano .hospital-informacion img {
+        width: 90%;
+    }
+    main .hospital-cercano .hospital-mapa .mapa {
+        height: 100%; 
+    }
+}
+/*MEDIA QUERIES: iPad*/
+@media (min-width:700px) and (max-width:1024px){
+
+    main .formulario h2,
+    main .formulario .contenedor-formulario .sintomas .sintomas-imagenes h4,
+    main .consejos h3,
+    main h3,
+    main h4{
+        font-size: 1.8em;
+    }
+
+    main .enfermedad  {
+        margin: 1em 0;
+        height: 40em;
+        width: 100%;
+        margin: 0 auto;
+    }
+    main .enfermedad .descripcion {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main .enfermedad .descripcion .imagen-enfermedad{
+        width: 70%;
+        margin: 1em;
+       
+    }
+    main .enfermedad .descripcion .descripcion-enfermedad p,
+    main .formulario .contenedor-formulario .sintomas p {
+        font-size: 1.1em;
+        margin-bottom: 1em;   
+        padding: 0 2em;
+    }
+    main .enfermedad .descripcion .descripcion-enfermedad  {
+        width: 90%;
+    }
+    main .formulario {
+        height: 100em;
+        margin: 0;
+    }
+    main .formulario h2 {
+        margin: 0;
+    }
+    main .formulario .contenedor-formulario {
+        flex-direction: column;
+    
+    }
+
+    main .formulario .contenedor-formulario .sintomas {
+        width: 100%;
+    }
+  
+    main .formulario .contenedor-formulario form label p {
+        font-size: 0.9em;
+    }
+
+    main .formulario .contenedor-formulario .sintomas .sintomas-imagenes .contenedor-imagenes {
+        flex-direction: column;
+        width: 100%;
+    }
+    main .formulario .contenedor-formulario .sintomas .sintomas-imagenes img {
+        width: 14em;  
+    }
+  
+    main .formulario .contenedor-formulario form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .formulario .contenedor-formulario form  button {
+        width: 4em;
+        padding: 0.2em;
+        font-size: 1em;
+    }
+    main .consejos-imagenes img {
+        width: 12em;  
+        margin: 0 auto;
+    }
+    main .consejos-imagenes {
+        height: 45em;
+        grid-column-gap:1em;
+        grid-template-columns: 10em 10em;
+    }
+    main .hospital-cercano {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    main .hospital-cercano article {
+        margin: 0 auto;
+        width: 100%;
+    }
+    main .hospital-cercano .hospital-informacion img {
+        width: 80%;
+    }
+    main .hospital-cercano .hospital-mapa .mapa {
+        height: 20em; 
+    }
+}
+    

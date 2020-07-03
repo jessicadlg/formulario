@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacion Salud - Pagina de Contacto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="Css/styles-contacto.css">
+    <link rel="stylesheet" href="Css/styles-principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <!--Logo-->
+            <article>
+                <div class="logo">
+                    <img src="Iconos/logo.png" alt="">
+                    <p>Fundacion Salud</p>
+                </div>
+            </article>
+            <article>
+                <!--Menu Responsive-->
+                <div class="menu_bar">
+                    <span> <a href="#" class="bt-menu"><img src="Iconos/logo.png" alt=""><i
+                                class="fas fa-bars"></i>Fundacion Salud</a></span>
+                </div>
+                <!--Menu-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pagina-listado-enfermedades.html">Enfermedades</a></li>
+                        <li><a href="pagina-mapa.html">Hospitales</a> </li>
+                        <li><a href="pagina-vacunas.html">Vacunación</a></li>
+                        <li><a href="pagina-contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <!--Buscador-->
+            <article>
+                <div class="buscador">
+                    <input type="search" class="input-buscador" name="" id="" placeholder="Buscar..."
+                        list="lista-busqueda">
+                    <datalist id="lista-busqueda">
+                        <option value="  COVID19"></option>
+                        <option value="  Dengue"></option>
+                        <option value="  Fiebre Amarilla"></option>
+                        <option value="  Gripe A"></option>
+                    </datalist>
+                </div>
+            </article>
+        </div>
+    </header>
+    <main>
+        <section class="contacto">
+            <h1>CONTACTO</h1>
+            <!-- Formulario -->
+            <div class="formulario">
+                <form action="#" name="form">
+                    <div class="form-control">
+                        <input type="text" id="nombreYapellido" placeholder="Nombre y Apellido:">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" id="email" placeholder="Email:">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="tel" id="telefono" id="telefono" placeholder="Telefono:">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
+                    </div>
+                    <textarea id="contador" placeholder="Escriba su consulta por favor..."
+                        onkeyup="contarcaracteres()"></textarea>
+                    <label id="texto-caracteres"></label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <!-- Datos de contacto -->
+        <section class="contenedor-datos">
+            <article>
+                <h2>DATOS DE CONTACTO</h2>
+                <p>Direccion: República Argentina 1741, Luis Guillon, Buenos Aires</p>
+                <p>Telefono: 4290-6212</p>
+                <p>Celular: 011 6160-2127</p>
+                <p>Email: <a href="fundacion-salud@gmail.com">fundacion-salud@gmail.com</a> </p>
+            </article>
+            <!-- Ubicacion -->
+            <article>
+                <div class="mapa-ubicacion">
+                    <h2>UBICACION:</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52425.81031047643!2d-58.49424227816516!3d-34.79051301196129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd227a911a9ed%3A0x1c345094700d580b!2sFundaci%C3%B3n%20Salud!5e0!3m2!1ses!2sar!4v1590707726349!5m2!1ses!2sar"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!--Datos Grupo-->
+        <article class="datos-footer">
+            <h4>Datos del Grupo </h4>
+            <p>Bellone, Agustina Belén</p>
+            <p>Delgado, Jessica Joana </p>
+        </article>
+        <!--Otras Paginas-->
+        <article class="menu-footer">
+            <h4>Otras páginas </h4>
+            <p><a href="pagina-listado-enfermedades.html">Enfermedades</a></p>
+            <p><a href="pagina-vacunas.html">Vacunas</a> </p>
+            <p><a href="pagina-mapa.html">Hospitales</a></p>
+            <p><a href="pagina-contacto.html">Contacto</a></p>
+        </article>
+        <!--Redes-->
+        <article class="redes">
+            <h4>Redes Sociales </h4>
+            <div class="iconos-footer">
+                <p><a href="http://www.facebook.com" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+                </p>
+                <p><a href="http://www.instagram.com" target="_blank"><i id="instagram"
+                            class="fab fa-instagram"></i></a></p>
+                <p><a href="https://www.twitter.com" target="_blank"><i id="twitter" class="fab fa-twitter"></i></a></p>
+            </div>
+        </article>
+    </footer>
+</body>
+<script src="Js/jquery-3.5.1.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="Js/pagina-contacto.js"></script>
+</html>

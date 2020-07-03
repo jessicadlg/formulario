@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundacion Salud - Pagina de Inicio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="Css/styles-principal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <!--Logo-->
+            <article>
+                <div class="logo">
+                    <img src="Iconos/logo.png" alt="">
+                    <p>Fundacion Salud</p>
+                </div>
+            </article>
+            <article>
+                <!--Menu Responsive-->
+                <div class="menu_bar">
+                    <span> <a href="#" class="bt-menu"><img src="Iconos/logo.png" alt=""><i
+                                class="fas fa-bars"></i>Fundacion Salud</a></span>
+                </div>
+                <!--Menu-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pagina-listado-enfermedades.html">Enfermedades</a></li>
+                        <li><a href="pagina-mapa.html">Hospitales</a> </li>
+                        <li><a href="pagina-vacunas.html">Vacunación</a></li>
+                        <li><a href="pagina-contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <!--Buscador-->
+            <article>
+                <div class="buscador">
+                    <input type="search" class="input-buscador" name="" id="" placeholder="Buscar..."
+                        list="lista-busqueda">
+                    <datalist id="lista-busqueda">
+                        <option value="  COVID19"></option>
+                        <option value="  Dengue"></option>
+                        <option value="  Fiebre Amarilla"></option>
+                        <option value="  Gripe A"></option>
+                    </datalist>
+                </div>
+            </article>
+        </div>
+    </header>
+    <main>
+        <!--Slider-->
+        <section class="slider">
+            <div class="page_container">
+                <div id="immersive_slider">
+                    <div class="slide" data-blurred="img/Slider/slide1_blurred.jpg">
+                        <div class="content">
+                            <p class="titulo"><a href="https://news.un.org/es/story/2020/06/1476172"
+                                    target="_blank">Ciencia</a></p>
+                            <p>La OMS, optimista de que habrá millones de dosis disponibles de una vacuna contra el
+                                COVID-19 a finales
+                                de 2020. Hay tres vacunas candidatas que están por comenzar la fase final de pruebas en
+                                humanos en
+                                Estados Unidos, Reino Unido y China.</p>
+                        </div>
+                        <div class="image">
+                            <a href="https://news.un.org/es/story/2020/06/1476172" target="_blank">
+                                <img src="img/Slider/slide1.jpg" alt="Slider 1">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="slide" data-blurred="img/Slider/slide2_blurred.jpg">
+                        <div class="content">
+                            <p class="titulo"><a
+                                    href="https://www.infobae.com/america/wapo/2020/04/07/consejos-para-ir-al-supermercado-en-tiempos-de-coronavirus/"
+                                    target="_blank">Cuidados</a></p>
+                            <p>La comida es algo esencial. Por eso aunque el mundo viva en un estado de cuarentena,
+                                nadie deja de ir a
+                                los supermercados. ¿Qué medidas podemos tomar para comprar con mayor tranquilidad?</p>
+                        </div>
+                        <div class="image">
+                            <a href="https://www.infobae.com/america/wapo/2020/04/07/consejos-para-ir-al-supermercado-en-tiempos-de-coronavirus/"
+                                target="_blank"> <img src="img/Slider/slide2.jpg" alt="Slider 1"></a>
+                        </div>
+
+                    </div>
+                    <div class="slide" data-blurred="img/Slider/slide3_blurred.jpg">
+                        <div class="content">
+                            <p class="titulo"><a
+                                    href="https://www.infobae.com/politica/2020/06/18/coronavirus-en-la-argentina-el-gobierno-implementara-un-tablero-de-control-para-saber-la-ocupacion-de-las-camas-de-terapia-intensiva/"
+                                    target="_blank">Política</a></p>
+                            <p>El Gobierno implementará un tablero de control para saber la ocupación de las camas de
+                                terapia
+                                intensiva. Ante el reclamo de estadísticas diarias sobre la saturación del sistema de
+                                salud, en un
+                                contexto de
+                                multiplicación de los contagios.</p>
+                        </div>
+                        <div class="image">
+                            <a href="https://www.infobae.com/politica/2020/06/18/coronavirus-en-la-argentina-el-gobierno-implementara-un-tablero-de-control-para-saber-la-ocupacion-de-las-camas-de-terapia-intensiva/"" target="
+                                _blank"><img src="img/Slider/slide3.jpg" alt="Slider 1"></a>
+                        </div>
+                    </div>
+                    <a href="#" class="is-prev">&laquo;</a>
+                    <a href="#" class="is-next">&raquo;</a>
+        </section>
+        <!--Enlaces a Otras Paginas-->
+        <section class="paginas">
+            <h2>INFORMATE CON NOSOTROS</h2>
+            <div class="enlaces">
+                <article>
+                    <div class="imagen"><a href="pagina-listado-enfermedades.html"><img src="Iconos/enfermedad.png"
+                                alt=""></a></div>
+                    <h3><a href="pagina-enfermedad.html">Enfermedades</a></h3>
+                </article>
+                <article>
+                    <div class="imagen"><a href="pagina-vacunas.html"><img src="Iconos/vacunas.png" alt=""></a></div>
+                    <h3><a href="pagina-vacunas.html">Vacunas</a></h3>
+                </article>
+                <article>
+                    <div class="imagen"><a href="pagina-mapa.html"><img src="Iconos/hospital.png" alt=""></a></div>
+                    <h3><a href="pagina-mapa.html">Hospitales</a></h3>
+                </article>
+            </div>
+        </section>
+        <!--Sintomas Informacion - Telefono -->
+        <section class="informacion">
+            <article class="texto-sintomas">
+                <p>Si tenés sintomas de COVID-19</p>
+                <p class="llama">LLAMÁ AL</p>
+            </article>
+            <article class="numero-telefono">
+                <p><a href="tel:+148"><img src="Iconos/telefono.png" alt=""></a> 148</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!--Datos Grupo-->
+        <article class="datos-footer">
+            <h4>Datos del Grupo </h4>
+            <p>Bellone, Agustina Belén</p>
+            <p>Delgado, Jessica Joana </p>
+        </article>
+        <!--Otras Paginas-->
+        <article class="menu-footer">
+            <h4>Otras páginas </h4>
+            <p><a href="pagina-listado-enfermedades.html">Enfermedades</a></p>
+            <p><a href="pagina-vacunas.html">Vacunas</a> </p>
+            <p><a href="pagina-mapa.html">Hospitales</a></p>
+            <p><a href="pagina-contacto.html">Contacto</a></p>
+        </article>
+        <!--Redes-->
+        <article class="redes">
+            <h4>Redes Sociales </h4>
+            <div class="iconos-footer">
+                <p><a href="http://www.facebook.com" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+                </p>
+                <p><a href="http://www.instagram.com" target="_blank"><i id="instagram"
+                            class="fab fa-instagram"></i></a></p>
+                <p><a href="https://www.twitter.com" target="_blank"><i id="twitter" class="fab fa-twitter"></i></a></p>
+            </div>
+        </article>
+    </footer>
+
+</body>
+  <!--JavaScript-->
+  <script src="Js/jquery-3.5.1.min.js"></script>
+  <script src="Js/menu.js"></script>
+  <!--Slider-->
+  <!-- <script type="text/javascript" src="Js/jquery-1.9.1.js"></script> -->
+  <script type="text/javascript" src="Js/jquery.immersive-slider.js"></script>
+</html>

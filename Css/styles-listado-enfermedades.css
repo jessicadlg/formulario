@@ -1,0 +1,144 @@
+/* Titulo */
+main section h1{
+    text-align: center;
+    font-size: 2.2em;
+    margin: 1.5em 0 1em;
+}
+main section article input:focus {
+    outline: none ;
+    outline-width: 0;
+    box-shadow: none;
+
+}
+main section article {
+    text-align: center;
+}
+main section article .buscar{
+    height: 3em;
+    font-size: 1.2em;
+    width: 20em;
+    padding-left: 0.5em;
+}
+
+/*Enfermedades*/
+.contenedorEnfermedades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 3em;
+}
+.contenedorEnfermedades article {
+    width: 50%;
+}
+.contenedorEnfermedades article.cajaEnfermedades-Imagen img {
+    width: 25em;
+    margin: 5% 0 0;
+    border-radius: 2%;
+    box-shadow: 0px 0px 15px -5px black;
+}
+.contenedorEnfermedades article.cajaEnfermedades-Imagen img:hover {
+    transform: translateY(-10px);
+    transition: transform 1s;
+}
+
+.contenedorEnfermedades  article.cajaEnfermedades-Descripcion h2 {
+    font-size: 2em;
+}
+.contenedorEnfermedades article.cajaEnfermedades-Descripcion{
+    width: 80%;
+ }
+.contenedorEnfermedades article.cajaEnfermedades-Descripcion p {
+    font-size: 1.2em;
+}
+.contenedorEnfermedades p{
+    margin: 1em 0;
+}
+.contenedorEnfermedades p a {
+    background-color: rgb(189, 114, 114);
+     border-radius: 1em;
+     color: #fff;
+     font-size: 0.8em;
+     text-decoration: none;
+     padding: 0.5em;
+}
+
+.contenedorEnfermedades p a:hover{
+    cursor: pointer;
+    background-color: rgb(173, 84, 84);
+}
+    /*MEDIA QUERIES: celular*/
+@media (min-width:360px) and (max-width:700px) {
+
+    main section h1{
+    font-size: 1.8em;
+    }
+
+    
+    main section article .buscar{
+    height: 2.5em;
+    width: 15em;
+    }
+
+    /*Enfermedades*/
+
+    .contenedorEnfermedades{
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: initial;
+    }
+
+    .contenedorEnfermedades article {
+    width: 100%;
+    }
+
+    .contenedorEnfermedades article.cajaEnfermedades-Imagen img {
+    width:90%;
+    margin: 1em auto;
+    }
+    .contenedorEnfermedades article.cajaEnfermedades-Imagen img:hover {
+    transform: none;
+    }
+
+    .contenedorEnfermedades  article.cajaEnfermedades-Descripcion h2 {
+        font-size: 1.5em;
+    }
+    .contenedorEnfermedades article.cajaEnfermedades-Descripcion{
+    width: 100%;
+    }
+    .contenedorEnfermedades article.cajaEnfermedades-Descripcion p {
+        font-size: 1.2em;
+    }
+}
+/*MEDIA QUERIES: iPad*/
+@media (min-width:700px) and (max-width:1024px){
+
+    .contenedorEnfermedades{
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: initial;
+    }
+
+    .contenedorEnfermedades article {
+    width: 100%;
+    }
+
+    .contenedorEnfermedades article.cajaEnfermedades-Imagen img {
+    width:90%;
+    margin: 1em auto;
+    }
+    .contenedorEnfermedades article.cajaEnfermedades-Imagen img:hover {
+    transform: none;
+    }
+
+    .contenedorEnfermedades  article.cajaEnfermedades-Descripcion h2 {
+        font-size: 2em;
+    }
+    .contenedorEnfermedades article.cajaEnfermedades-Descripcion{
+    width: 100%;
+    }
+    .contenedorEnfermedades article.cajaEnfermedades-Descripcion p {
+        font-size: 1.2em;
+    }
+}
+
