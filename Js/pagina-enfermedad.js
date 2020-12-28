@@ -1,21 +1,46 @@
 /*FORMULARIO*/
 //funcion para validar los campos 
 function validar() {
+    var expDni = /^([0-9]{8})$/
     var expTelefono = /^([0-9]{4})+(-)+([0-9]{4})$/
     var error = false;
     var mensajesError = "";
     contador = 0;
-    if (document.getElementById("nombreYapellido").value <= 3) {
+    // VALIDO NOMBRE Y APELLIDO
+    if (document.getElementById("nombreYapellido").value == "") {
         error = true;
-        mensajesError += "<p>Por favor ingrese el campo nombre y apellido es obligatorio!</p>";
+        mensajesError += "<p>El campo nombre y apellido es obligatorio</p>";
+        document.getElementById("nombreYapellido").style.borderColor = "red";
+    } else if (document.getElementById("nombreYapellido").value.length < 5) {
+        error = true;
+        mensajesError += "<p>Por favor el campo nombre y apellido debe tener un minimo de 5 caracteres!</p>";
+        document.getElementById("nombreYapellido").style.borderColor = "red";
+    } else {
+        document.getElementById("nombreYapellido").style.borderColor = "green";
     }
-    if (document.getElementById("dni").value <= 8) {
+    // VALIDO DNI
+    if (document.getElementById("dni").value ==
+        "") {
         error = true;
         mensajesError += "<p>Por favor complete el número de dni es obligatorio!</p>";
-    }
-    if (document.getElementById("telefono").value == "" && (!(expTelefono.test(telefono)))) {
+        document.getElementById("dni").style.borderColor = "red";
+    } else if (!(expDni.test(document.getElementById("dni").value))) {
         error = true;
-        mensajesError += "<p>Por favor complete el número de teléfono es obligatorio</p>";
+        mensajesError += "<p>Por favor ingrese el campo dni debe tener  8 caracteres numericos!</p>";
+    } else {
+        document.getElementById("dni").style.borderColor = "green";
+    }
+    // VALIDO TELEFONO
+    if (document.getElementById("telefono").value ==
+        "") {
+        error = true;
+        mensajesError += "<p>Por favor complete el número de telefono es obligatorio!</p>";
+        document.getElementById("telefono").style.borderColor = "red";
+    } else if (!(expTelefono.test(document.getElementById("telefono").value))) {
+        error = true;
+        mensajesError += "<p> El número de teléfono debe tener formato xxxx-xxxx con 8 caracteres numericos y un guion medio al centro!</p>";
+    } else {
+        document.getElementById("telefono").style.borderColor = "green";
     }
     // Valido radio button de viaje
     var viajo = document.getElementsByName("ext");
@@ -24,7 +49,10 @@ function validar() {
         if (viajo[i].checked) {
             seleccionadoV = true;
             if (viajo[i].value == "SI") {
-
+                if (document.getElementById("pais").value == 0) {
+                    error = true;
+                    mensajesError += "<p>Por favor seleccione una opcion de paises visitados es obligatorio</p>";
+                }
             }
         }
     }
@@ -32,17 +60,6 @@ function validar() {
         error = true;
         mensajesError += "<p>Por favor,debe selecccionar si ha viajado al exterior</p>";
     }
-    else {
-    // seleccionar paises
-    if (document.getElementById("pais").value == 0) {
-        error = true;
-        mensajesError += "<p>Por favor seleccione una opcion de paises visitados es obligatorio</p>";
-    }
-    else{
-        $("#pais").css("display","block");
-    }
-}
-
     //validacion radio buton:
     var fiebre = document.getElementsByName("campo8");
     var seleccionado = false;
@@ -92,9 +109,9 @@ function validar() {
     for (i in garganta) {
         if (garganta[i].checked) {
             seleccionado = true;
-            if (garganta[i].value == "SI"){
+            if (garganta[i].value == "SI") {
                 contador++;
-            }  
+            }
         }
     }
     if (!seleccionado) {
@@ -107,36 +124,32 @@ function validar() {
     for (i in respiracion) {
         if (respiracion[i].checked) {
             seleccionado = true;
-            if (respiracion[i].value == "SI")
+            if (respiracion[i].value == "SI") {
                 contador++;
+                // aqui valide campos ocultos
+                if (document.getElementById("dir").value == "") {
+                    error = true;
+                    mensajesError += "<p>Por favor complete el campo direccion es obligatorio!</p>";
+                }
+                if (document.getElementById("ciu").value == "") {
+                    error = true;
+                    mensajesError += "<p>Por favor complete el campo ciudad es obligatorio!</p>";
+                }
+            }
         }
     }
     if (!seleccionado) {
         error = true;
         mensajesError += "<p>Por favor,debe selecccionar si tuvo dificultad para respirar</p>";
     }
-
-    // onchange
-
-
-    if (document.getElementById("dir").value == "") {
-        error = true;
-        mensajesError += "<p>Por favor complete el campo direccion es obligatorio!</p>";
-    }
-    if (document.getElementById("ciu").value == "") {
-        error = true;
-        mensajesError += "<p>Por favor complete el campo ciudad es obligatorio!</p>";
-    }
     //error muestro msj
     if (error == 0) {
-        alert("Formulario enviado exitosamente!!  Fueron registrados los siguientes síntomas de COVID-19: "  + contador);
+        alert("Formulario enviado exitosamente!!  Fueron registrados los siguientes síntomas de COVID-19: " + contador);
         return true;
     } else {
         document.getElementById("mensaje").innerHTML = mensajesError;
         return false;
     }
-
-    //del cierre fc validar        
 }
 
 function cambiar() {
@@ -166,6 +179,6 @@ function cambiar() {
         }
 
     }
-    // del cierre de uncion cambiar
+
 }
 

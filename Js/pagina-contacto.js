@@ -22,9 +22,11 @@ function checkInputs() {
 	
 //Evaluamos las condiciones:
 
-	if(nombreYapellidoValue === '') {
+	if(nombreYapellidoValue === '' ) {
 		setErrorFor(nombreYapellido, 'No puede dejar el campo vacío');
-	} else {
+	}  else if( nombreYapellidoValue.length< 5){
+		setErrorFor(nombreYapellido, 'Este campo debe tener mas  de 5 caracteres');
+	}else {
 		setSuccessFor(nombreYapellido, 'Nombre y Apellido válidos');
 	}
 	if (!isEmail(emailValue)) {
@@ -34,7 +36,7 @@ function checkInputs() {
 	}
 	if(telefonoValue===''){
 	} else if (!isTelefono(telefonoValue)){
-		setErrorFor(telefono, 'No ingresó un teléfono válido');
+		setErrorFor(telefono, 'El formato valido es xxxx-xxxx');
 	} else  {
 		setSuccessFor(telefono, 'Teléfono válido');
 	}

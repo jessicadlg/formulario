@@ -121,6 +121,12 @@ main .formulario .contenedor-formulario form  .boton-visitado {
     margin: auto;
     text-align: left;
 }
+main .formulario .contenedor-formulario form .error{
+    color: rgb(153, 54, 54);
+    border:1.5px solid rgb(153, 54, 54) ;
+    margin: 1em;
+
+}
 main .formulario .contenedor-formulario form  button {
     background-color:rgb(173, 83, 83);
     width: 6em;
@@ -147,7 +153,8 @@ main .formulario .contenedor-formulario form .oculto {
 main h3 {
     text-align: center;
     font-size: 2em;
-    margin: 1em 0;
+    margin: 1em 2em;
+    margin-top: 8em;
 }
 main .consejos-imagenes {
     width: 100%;
@@ -156,6 +163,7 @@ main .consejos-imagenes {
     grid-template-columns: 10em 10em 10em 10em;
     grid-column-gap: 4em;
     margin-bottom: 10em;
+    margin-top: 5em;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
@@ -264,7 +272,6 @@ main .hospital-cercano .hospital-mapa .mapa iframe {
         height: 100em;
     
     }
-
     main .formulario .contenedor-formulario .sintomas {
         width: 100%;
     }
@@ -294,7 +301,7 @@ main .hospital-cercano .hospital-mapa .mapa iframe {
 
     }
     main .consejos {
-        margin-top: 6em;
+        margin-top:45em;
         height: 50em;
     }
     main .consejos-imagenes img {
@@ -302,7 +309,7 @@ main .hospital-cercano .hospital-mapa .mapa iframe {
         margin: 0 auto;
     }
     main .consejos-imagenes {
-        height: 45em;
+        height: 40em;
         grid-column-gap:1em;
         grid-template-columns: 10em 10em;
     }
@@ -333,7 +340,9 @@ main .hospital-cercano .hospital-mapa .mapa iframe {
     main h4{
         font-size: 1.8em;
     }
-
+    main h3{
+        margin-top:10em;
+    }
     main .enfermedad  {
         margin: 1em 0;
         height: 40em;
@@ -370,15 +379,12 @@ main .hospital-cercano .hospital-mapa .mapa iframe {
         flex-direction: column;
     
     }
-
     main .formulario .contenedor-formulario .sintomas {
         width: 100%;
     }
-  
-    main .formulario .contenedor-formulario form label p {
+      main .formulario .contenedor-formulario form label p {
         font-size: 0.9em;
     }
-
     main .formulario .contenedor-formulario .sintomas .sintomas-imagenes .contenedor-imagenes {
         flex-direction: column;
         width: 100%;
@@ -386,8 +392,7 @@ main .hospital-cercano .hospital-mapa .mapa iframe {
     main .formulario .contenedor-formulario .sintomas .sintomas-imagenes img {
         width: 14em;  
     }
-  
-    main .formulario .contenedor-formulario form {
+      main .formulario .contenedor-formulario form {
         width: 90%;
         margin: 0 auto;
     }
